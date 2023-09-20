@@ -14,10 +14,10 @@ Spring + Hibernate + MySQL
 ___
 **Ferramentas**
 
-IntelliJ IDEA Community Edition
-MySQL Workbench
-Postman
-Google Chrome
+`-` IntelliJ IDEA Community Edition
+`-` MySQL Workbench
+`-` Postman
+`-` Google Chrome
 
 
 ___
@@ -25,8 +25,8 @@ ___
 
 Cadastro de Dados
 
-POST: /dados - Salvar novos dados cadastrais
-GET: /dados - Consultar todos os dados cadastrais
-GET: /dados/{id} - Consultar dados cadastrais por identificador
-DELETE: /dados/{id} - Excluir dados cadastrais por identificador
-PUT: /dados/{id} - Editar dados cadastrais por identificador
+`-` POST: /dados - Salvar novos dados cadastrais
+`-` GET: /dados - Consultar todos os dados cadastrais
+`-` GET: /dados/{id} - Consultar dados cadastrais por identificador
+`-` DELETE: /dados/{id} - Excluir dados cadastrais por identificador
+`-` PUT: /dados/{id} - Editar dados cadastrais por identificador
