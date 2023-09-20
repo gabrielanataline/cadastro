@@ -21,7 +21,7 @@ public class DadosService {
     private DadosRepository dadosRepository;
 
     public DadosDTO save (DadosDTO dto){
-        LOGGER.info("Dados salvos com sucesso!");
+        LOGGER.info("Cadastro criado com sucesso!");
         DadosPessoais dados = DadosDTO.convert(dto);
         dados = this.dadosRepository.save(dados);
         return new DadosDTO(dados);
@@ -36,7 +36,7 @@ public class DadosService {
     public DadosDTO findById(Long id) {
         Optional<DadosPessoais> resultado = this.dadosRepository.findById(id);
         if (resultado.isPresent()) {
-            LOGGER.info("Dados com id {} encontrados com sucesso!", id);
+            LOGGER.info("Dados com id {} encontrado com sucesso!", id);
             return new DadosDTO(resultado.get());
         } else {
             LOGGER.error("O id informado não foi encontrado: {}", id);
@@ -50,7 +50,7 @@ public class DadosService {
             DadosPessoais dadosPessoais = DadosDTO.convert(dto);
             dadosPessoais.setId(id);
             dadosPessoais = this.dadosRepository.save(dadosPessoais);
-            LOGGER.info("Dados com id {} atualizados com sucesso!", id);
+            LOGGER.info("Dados com id {} atualizado com sucesso!", id);
             return new DadosDTO(dadosPessoais);
         } else {
             LOGGER.error("Cadastro não encontrado com o id {}", id);
@@ -62,7 +62,7 @@ public class DadosService {
         DadosDTO dto = this.findById(id);
         if (dto != null) {
             this.dadosRepository.deleteById(id);
-            LOGGER.info("Dados com id {} excluídos com sucesso!", id);
+            LOGGER.info("Dados com id {} excluído com sucesso!", id);
         } else {
             LOGGER.error("Cadastro não encontrado com o id {}", id);
             throw new RuntimeException("Cadastro não encontrado com o id " + id);

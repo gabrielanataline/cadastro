@@ -1,10 +1,13 @@
 package com.itau.estagiaria.controllers;
 import com.itau.estagiaria.models.dtos.DadosDTO;
+import com.itau.estagiaria.valida.DadosResponse;
 import com.itau.estagiaria.services.DadosService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -14,19 +17,19 @@ public class DadosController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DadosController.class);
 
-
     @Autowired
     private DadosService dadosService;
 
+    @GetMapping("/")
+    public ResponseEntity checkDadosStatus(){
+        DadosResponse dadosResponse = new DadosResponse("Api de Cadastro iniciado com sucesso!");
+        return new ResponseEntity(dadosResponse, HttpStatus.OK);
+    }
+
+
     @PostMapping("/dados")
     public DadosDTO save(@RequestBody @Valid DadosDTO dto){
-        try{
-            LOGGER.info("Cadastro criado com sucesso!");
-            return this.dadosService.save(dto);
-        } catch (RuntimeException e) {
-            LOGGER.error("Erro ao criar cadastro!");
-            throw new RuntimeException(e.getMessage());
-        }
+        return this.dadosService.save(dto);
     }
 
     @GetMapping("/dados")
