@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "8674ea72-a49e-4849-9cb6-bc0cef53ca48",
+		"name": "Dados Pessoais",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24094350"
+	},
+	"item": [
+		{
+			"name": "Buscar todos dados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salvar dados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Gabriela Nataline\",\n    \"sobrenome\": \"Oliveira\",\n    \"idade\": 4,\n    \"pais\": \"Brasil\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar dados por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Sônia\",\n    \"sobrenome\": \"Maria\",\n    \"idade\": 47,\n    \"pais\": \"Brasil\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar dados por ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"nome\": \"Maria Bonita\",\n        \"sobrenome\": \"Oliveira\",\n        \"idade\": 4,\n        \"pais\": \"Argentina\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar dados por ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Sônia\",\n    \"sobrenome\": \"Maria\",\n    \"idade\": 47,\n    \"pais\": \"Brasil\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

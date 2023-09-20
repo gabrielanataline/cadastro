@@ -1,0 +1,41 @@
+create database cadastro;
+use cadastro;
+describe dados_pessoais;
+select *from dados_pessoais;
+
+INSERT INTO dados_pessoais (`Nome`,`Sobrenome`,`Idade`,`Pais`)
+VALUES
+  ("Elton Stone","Kyla Watson",76,"Brazil"),
+  ("Maxwell Reed","Aretha Becker",73,"Brazil"),
+  ("Avye Huffman","Ebony Cannon",58,"Brazil"),
+  ("Hasad Dickson","Liberty Guerrero",41,"Brazil"),
+  ("Zachery Hall","Brynne Medina",65,"Brazil"),
+  ("Arden Atkins","Tanisha Bolton",69,"Brazil"),
+  ("Marshall Marks","Raya Bullock",38,"Brazil"),
+  ("Tashya Cervantes","Elaine Clemons",51,"Brazil"),
+  ("Rebecca Keith","Lillith Bridges",8,"Brazil"),
+  ("Brandon Barrera","Ruth Ramirez",38,"Brazil"),
+  ("Hedley George","Morgan Spencer",20,"Brazil"),
+  ("Xavier Rhodes","Buffy Harper",40,"Brazil"),
+  ("Cooper Ryan","Imani Russell",71,"Brazil"),
+  ("Ciaran Houston","Nevada Rosa",70,"Brazil"),
+  ("Clarke Summers","Sade English",86,"Brazil"),
+  ("Thomas Landry","Minerva Golden",13,"Brazil"),
+  ("Elliott Dotson","Paula Schneider",57,"Brazil"),
+  ("Chase Graham","Evangeline Wilkins",50,"Brazil"),
+  ("Trevor Blake","Tasha Sellers",81,"Brazil"),
+  ("Desiree Mcclure","Justina Myers",47,"Brazil"),
+  ("Myles Joyce","Kelly Sharpe",70,"Brazil"),
+  ("Peter Kelley","Latifah Mckay",28,"Brazil"),
+  ("Robert Whitfield","Alisa Dickson",31,"Brazil"),
+  ("Michael Shaffer","Jacqueline Glenn",38,"Brazil"),
+  ("Slade Graves","McKenzie Andrews",46,"Brazil"),
+  ("Fletcher Lewis","Jolie Schroeder",85,"Brazil"),
+  ("Phelan Reyes","Carolyn Walton",78,"Brazil"),
+  ("Kibo Bond","Yoko Lane",25,"Brazil"),
+  ("Latifah Cunningham","Ina Larsen",42,"Brazil"),
+  ("Camden Daniel","Piper Garrett",88,"Brazil"),
+  ("Blossom Cannon","Isabella Fuentes",5,"Brazil"),
+  ("Kareem Dickerson","Wynne Larsen",42,"Brazil"),
+  ("Myles Glenn","Hilda Pratt",48,"Brazil");
+
