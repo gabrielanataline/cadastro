@@ -1,23 +1,28 @@
 **API Dados Cadastrais**
 
-**Descrição**
+
 ___
+**Descrição**
+
 A API Dados Cadastrais é uma API REST desenvolvida com o objetivo de gerenciar informações de dados cadastrais. Esta API foi criada utilizando Spring Boot e Hibernate, duas poderosas tecnologias do ecossistema Java.
 
-**Tecnologias**
 ___
+**Tecnologias**
+
 Spring + Hibernate + MySQL
 
-**Ferramentas**
 ___
+**Ferramentas**
+
 IntelliJ IDEA Community Edition
 MySQL Workbench
 Postman
 Google Chrome
 
 
-**Endpoints**
 ___
+**Endpoints**
+
 Cadastro de Dados
 
 POST: /dados - Salvar novos dados cadastrais
